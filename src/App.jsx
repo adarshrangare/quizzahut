@@ -5,13 +5,17 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
+import QuizDisplay from "./feature/QuizDisplay/QuizDisplay";
+import RootLayout from "./layout/RootLayout";
 
 
-import { RootLayout, Home, About, Profile, Contact, QuizzHome } from "./pages";
+
+import {  Home, About, Profile, Contact, QuizzHome } from "./pages";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<RootLayout />}>
+    <>
+    <Route path="/" element={<RootLayout/>}>
       <Route index element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact/>} />
@@ -20,6 +24,10 @@ const router = createBrowserRouter(
       <Route path="*" element={<Home/>} />
       
     </Route>
+    <Route>
+       <Route path="/quiz" element={<QuizDisplay/>} />
+    </Route>
+   </>
   )
 );
 
