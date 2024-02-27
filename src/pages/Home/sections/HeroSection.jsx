@@ -7,7 +7,7 @@ import HeroImage from "../../../assets/HeroImage/HeroImage";
 export const HeroSection = () => {
   return (
     <section className="relative w-full flex justify-between mx-auto flex-col md:flex-row px-5 md:px-20 bg-gradient-to-br from-slate-50 via-sky-200 to-sky-100">
-      <div className="relative md:w-2/5  flex flex-col justify-center items-start w-full max-md:padding-x pt-10 md:pt-20 ">
+      <div className="relative md:w-2/5  flex flex-col justify-center items-start w-full max-md:padding-x pt-10 ">
         <p className="text-xl font-montserrat text-coral-red">
           Our Ultimate Quiz Series
         </p>
@@ -23,8 +23,7 @@ export const HeroSection = () => {
         <p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-8 sm:max-w-sm ">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur
           praesentium, id quidem ipsum unde omnis obcaecati. Repellendus tenetur
-          cumque pariatur distinctio nostrum! Nihil ipsam ipsum eius doloribus
-          architecto, repellat nemo!
+          cumque pariatur distinctio nostrum!
         </p>
 
         <button className="bg-sky-500 mb-6 hover:bg-sky-600 transition-all active:scale-90  rounded-full text-xl font-semibold py-3 px-8 text-white ">
